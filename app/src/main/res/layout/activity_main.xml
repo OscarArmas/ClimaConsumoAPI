@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_2"
+    tools:context="com.example.asus.clima.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textViewCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ciudad De Mexico"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewViento"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTemp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCiudad"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textViewTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="128dp"
+        android:layout_marginTop="44dp"
+        android:text="15°c"
+        android:textColor="#fff"
+        android:textSize="15pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCiudad" />
+
+    <TextView
+        android:id="@+id/textViewViento"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginBottom="170dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="170dp"
+        android:text="Viento"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSunset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewCiudad" />
+
+    <TextView
+        android:id="@+id/textViewNube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="221dp"
+        android:text="Nube"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="@+id/textViewViento"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPresion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Presion"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="@+id/textViewNube"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNube" />
+
+    <TextView
+        android:id="@+id/textViewHumedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Humedad"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="@+id/textViewPresion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPresion" />
+
+    <TextView
+        android:id="@+id/textViewSunrise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Puesta de sol"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="@+id/textViewHumedad"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHumedad" />
+
+    <TextView
+        android:id="@+id/textViewSunset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Amanecer"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="@+id/textViewSunrise"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSunrise" />
+
+    <TextView
+        android:id="@+id/textViewUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:text="Ultima Actualizacion"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
